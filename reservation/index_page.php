@@ -12,10 +12,10 @@
     <header>
         <h1>Салон красоты</h1>
     </header>
-    <div id="content">
-        <section id="reservation-form" class="container">
-            <h2>Записаться</h2>
-            <form action="./index.php" method="POST">
+    <div class="content">
+        <section id="reservation-form" class="card shadow">
+            <h2 class="card__title shadow">Записаться</h2>
+            <form action="./index.php" method="POST" class="card__content">
                 <label>Мастер:
                     <select name="field-master">
                         <?php 
@@ -56,9 +56,13 @@
                 <?php
                 foreach($reservations as &$reservation) {
                     ?>
-                    <div class="reservations__list__item">
-                        <p class="master-name">Мастер: <?php print $masters[$reservation["worker_id"]]?></p>
-                        <p class="reservation-time">Дата записи: <?php print $reservation["date"] . " " . $reservation["hour"] . ":00"?></p>
+                    <div class="reservations__list__item card">
+                        <h2 class="master-name card__title">Мастер: 
+                            <?php print $masters[$reservation["worker_id"]]?>
+                        </h2>
+                        <label class="reservation-time card__content">Дата записи: 
+                            <span><?php print $reservation["date"] . " " . $reservation["hour"] . ":00"?></span>
+                        </label>
                     </div>
                     <?php
                 }

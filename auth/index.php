@@ -27,6 +27,7 @@ function on_post() {
     $user_id = get_user_id($db, $email, $password_hash);
     if ($user_id == -1) {
         setcookie("login-error", "1");
+        setcookie('action_status', '-4');
         header("Location: ./");
         exit();
     }

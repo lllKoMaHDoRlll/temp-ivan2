@@ -1,12 +1,10 @@
 <?php
 
 $STATUS_DESCRIPTION = array(
-    "1" => "Form was successfully sent.",
-    "2" => "Form submission was successfully edited.",
-    "3" => "Form submission was successfully deleted.",
-    "-1" => "An error was occured during validation.",
-    "-2" => "An error was occured during connecting to the database.",
-    "-3"=> "An error was occured during sending data to the database.",
+    "-1" => "Неправильно заполнены поля!",
+    "-2" => "Ошибка при подключении к базе данных!",
+    "-3"=> "Ошибка при запросе к базе данных",
+    "-4" => "Неправильный логин или пароль"
 );
 
 function parse_user_reg_from_post() {

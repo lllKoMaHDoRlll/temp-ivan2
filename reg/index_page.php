@@ -12,10 +12,10 @@
     <header>
         <h1>Салон красоты</h1>
     </header>
-    <div id="content">
-        <section id="reg-form" class="container">
-            <h2>Регистрация</h2>
-            <form action="./index.php" method="POST">
+    <div class="content">
+        <section id="reg-form" class="card shadow">
+            <h2 class="card__title shadow">Регистрация</h2>
+            <form action="./index.php" method="POST" class="card__content">
                 <label>ФИО:
                     <input name="field-name" placeholder="Ваше ФИО" type="text" required>
                 </label>

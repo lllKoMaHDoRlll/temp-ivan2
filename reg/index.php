@@ -22,6 +22,7 @@ function on_post() {
 
     if (!validate_fields_and_set_cookies_reg()) {
         setcookie("action_status", "-1");
+        header("Location: ./");
         exit();
     }
 

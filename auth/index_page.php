@@ -12,10 +12,10 @@
     <header>
         <h1>Салон красоты</h1>
     </header>
-    <div id="content">
-        <section id="auth-form" class="container">
-            <h2>Вход</h2>
-            <form action="./index.php" method="POST">
+    <div class="content">
+        <section id="auth-form" class="card shadow">
+            <h2 class="card__title shadow">Вход</h2>
+            <form action="./index.php" method="POST" class="card__content">
                 <label>Почта:
                     <input name="field-email" placeholder="example@example.com" type="mail">
                 </label>
